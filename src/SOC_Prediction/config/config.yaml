@@ -1,0 +1,20 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  data_dir: artifacts/data_ingestion
+
+prepare_base_model:
+  model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/trained_model.h5
+  train_chemistry: Ai2020_rand_merged.csv
+  test_chemistry_1: Marquis2019_rand_merged.csv
+  test_chemistry_2: Chen2020_rand_merged.csv
+  train_val_split: 0.5
+  sampling_rate: 30
+  avg_window: 11 #odd number only
+  should_avg_be_the_feature: True
+  LSTM_window_length: 10

@@ -1,4 +1,6 @@
-gdown
+tensorflow==2.12.0
+pandas
+pybamm
 dvc
 mlflow==2.2.2
 notebook
